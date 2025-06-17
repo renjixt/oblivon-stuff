@@ -94,6 +94,7 @@
     z-index: 10;
     pointer-events: none;
     will-change: transform;
+    color: #fff;
   }
 
   #content.show {
@@ -160,6 +161,25 @@
     transform: scale(1.2);
   }
 
+  /* New blocks */
+  .about-me, .services, .payment {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .services ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .services ul li {
+    margin: 8px 0;
+  }
+
   @media (max-width: 480px) {
     #content {
       padding: 30px 25px;
@@ -193,19 +213,41 @@
   </div>
 
   <main id="content" role="main" aria-hidden="true" tabindex="-1">
-    <!-- Аватар -->
+    <!-- Avatar -->
     <div class="profile" style="text-align: center;">
       <img class="avatar" src="https://i.pinimg.com/736x/ab/6e/4f/ab6e4f82b715ee17e91d0c4abd9ebabe.jpg" alt="avatar" />
     </div>
 
-    <!-- Имя и описание -->
+    <!-- Name and Description -->
     <h1>oblivion</h1>
     <p class="description">0% LUCK 100% GOD</p>
 
-    <!-- Социальные сети -->
+    <!-- About Me -->
+    <div class="about-me">
+      <p><strong>Prompt Engineer / AI Content Expert</strong></p>
+      <p>Providing tailored AI-driven content and prompt solutions to boost your projects.</p>
+    </div>
+
+    <!-- Services -->
+    <div class="services">
+      <p><strong>🔥 Services:</strong></p>
+      <ul>
+        <li>5 custom AI social media posts — $30</li>
+        <li>YouTube & Instagram content pack — $50</li>
+        <li>Personal AI assistant prompt system — $100</li>
+      </ul>
+    </div>
+
+    <!-- Payment -->
+    <div class="payment">
+      <p><strong>💸 Payments accepted in TON / USDT / ETH</strong></p>
+      <p>Contact me on Telegram for wallet details or QR code.</p>
+    </div>
+
+    <!-- Socials -->
     <div class="socials-wrapper">
       <div class="socials" aria-label="Social media links">
-        <a href="https://t.me/wispfog" target="_blank" aria-label="Telegram">
+        <a href="https://t.me/unpromted" target="_blank" aria-label="Telegram">
           <img src="src/telegram.png" alt="Telegram">
         </a>
         <a href="https://www.notion.so/Portfolio-214463cb26ab801fafafdf84aadcfb38?source=copy_link" target="_blank" aria-label="Notion">
